@@ -1,0 +1,12 @@
+body {
+  background: rgb(182,132,196);
+  background: radial-gradient(circle, rgba(182,132,196,0.9809173669467787) 18%, rgba(148,187,233,1) 83%);
+}
+
+.logo {
+  width: 30%;
+}
+
+.bg-black {
+  background: #090909;
+}

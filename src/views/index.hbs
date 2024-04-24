@@ -1,0 +1,116 @@
+<style>
+  @keyframes slideInFromTop {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes vanishAndAppear {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.05);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .main-container {
+    border: 2px solid #110909;
+    border-radius: 15px;
+    box-shadow: 10px 8px 10px 5px #ebebe3b5;
+    padding: 20px;
+    background: linear-gradient(to left, rgba(53, 183, 79, 0.5), rgba(98, 80, 117, 0.5),rgba(225, 165, 126, 0.5));
+    /* Changed background color */
+    animation: slideInFromTop 3s forwards, pulse 3s 1 alternate;
+    /* Apply animations */
+  }
+
+  .thought {
+    display: inline-block;
+  }
+
+  .text {
+    font-size: 4.5em;
+    letter-spacing: 10px;
+    color: #b03846;
+    font-family: monospace;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+      typing 4s forwards infinite,
+      cursor .9s step-end infinite alternate;
+      animation-delay: 2s;
+  }
+  @media screen and (max-width:1013px) {
+    .text{
+    font-size: 3em;
+
+    }
+  }
+
+  @keyframes cursor {
+    50% {
+      border-color: transparent
+    }
+  }
+
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+  .c{
+    font-weight: 600;
+  }
+  .v{
+    font-weight: 500;
+  }
+  .btn-register {
+    border-radius: 10px; /* Border radius of 10px */
+  }
+
+  .btn-register:hover {
+    background-color: #998b8b; /* Light grey color on hover */
+    color: #110909;
+  }
+</style>
+
+<div class="main-container card card-body p-5 mt-4">
+  <div class="thought">
+    <p class="text">NoteWorthyHub</p>
+  </div>
+  <p class=" c lead">Welcome to Secure Note Taking App, where organizing your thoughts has never been easier. We understand
+    the importance of capturing ideas, inspirations, and important information seamlessly. That's why we've created a
+    versatile note-taking platform designed to enhance your productivity and creativity</p>
+  <hr class="my-4 v" />
+  <p>Our mission is to empower individuals to capture, organize, and share their ideas effortlessly. Whether you're a
+    student, professional, or creative thinker, Thought Vault is here to support you on your journey towards
+    productivity and success
+  </p>
+  <div>
+    <a class="btn btn-primary btn-lg btn-register" href="/auth/signup" role="button">Register</a>
+  </div>
+</div>

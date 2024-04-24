@@ -1,0 +1,83 @@
+<style>
+  
+  .container > span{
+    font-size: 50px;
+    color: #333;
+    font-weight: bold;
+    animation: glow 2s ease-in-out infinite;
+  }
+  @keyframes glow {
+    0%, 100%{
+      color: #4e10d5;
+      text-shadow: 0 0 12px rgb(252, 249, 79), 0 0 50px lightsalmon, 0 0 50px rgb(252, 249, 79);
+    }
+    10%, 90%{
+      color: #1111;
+      text-shadow: none;
+    }
+  }
+  .container > span:nth-child(2){
+    animation-delay: 0.25s;
+  }
+  .container > span:nth-child(3){
+    animation-delay: 0.5s;
+  }
+  .container > span:nth-child(4){
+    animation-delay: 0.75;
+  }
+  .container > span:nth-child(5){
+    animation-delay: 1s;
+  }
+  .card {
+    height: 500px;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    box-shadow: 5px 5px 15px 10px rgb(159, 234, 234);
+    background-color: #a758a6;
+    transition: all 0.3s ease;
+    padding: 20px;
+  }
+
+ 
+
+  .content {
+    margin: 20px;
+    padding: 30px;
+    font-size: larger;
+    font-weight: 600;
+    color: #1d1a1a; 
+  }
+
+  .card:hover {
+    box-shadow: 0px 0px 20px #888;
+    transform: skewX(10deg)
+  }
+
+  .card:hover .content {
+    transform: rotateZ(0deg);
+  }
+
+  /*.content:hover {
+    transform: rotateZ(5deg);
+  } */
+</style>
+<section class="card">
+  <div class="card-body">
+    <div class="container">
+      <span>A</span>
+      <span>B</span>
+      <span>O</span>
+      <span>U</span>
+      <span>T</span>
+    </div>
+    <div class="content">
+      <p>
+        About Our Note-Taking Project
+        Welcome to NoteWorthyHub, where organizing your thoughts has never been easier. We understand the importance of capturing ideas, inspirations, and important information seamlessly. That's why we've created a versatile note-taking platform designed to enhance your productivity and creativity.
+        At NoteWorthyHub, we believe in simplicity and efficiency. Our user-friendly interface allows you to jot down notes, create to-do lists, record audio memos, and even sketch ideas effortlessly. Whether you're in a brainstorming session, attending a lecture, or planning your next big project, our platform is your digital companion for all your note-taking needs.
+      </p>
+    </div>
+  </div>
+</section>
+
+
